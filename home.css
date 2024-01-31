@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+.home {
+  display: flex;
+  justify-content: stretch;
+}
+.home .left {
+  background: #000;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+}
+.home .right {
+  width: 50%;
+  padding: 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home .left img {
+  width: 120px;
+  height: 90px;
+}
+.home .left h1 {
+  font-size: 60px;
+  font-family: "Poppins";
+}
+.home .left p {
+  font-family: "Poppins";
+  font-weight: 400;
+  border: 3px solid #fff;
+  margin-left: -25px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 31.6px;
+  margin-top: 10px;
+  width: 390px;
+  text-wrap: nowrap;
+  animation: fade 3s;
+}
+.home .right {
+  background-image: url("/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home .left span {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: -70px;
+  animation: scratch 2s;
+}
+@keyframes scratch {
+  from {
+    transform: translateX(-320px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .left {
+    width: 100%;
+  }
+  .home .right {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+  .home .right h1 {
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-family: "Poppins";
+    line-height: 37px;
+  }
+  .home .right p {
+    font-size: 20px;
+    font-family: "Poppins";
+    filter: drop-shadow(0 0 20px #0000003c);
+  }
+}
