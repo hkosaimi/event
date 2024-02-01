@@ -93,6 +93,11 @@
   font-family: "Poppins";
   filter: drop-shadow(0 0 20px #0000003c);
 }
+.countdown {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Poppins";
+}
 @keyframes scratch {
   from {
     transform: translateX(-320px);
@@ -108,19 +113,20 @@
   }
   .home .left {
     width: 100%;
-    padding: 3rem 0;
-    height: 50%;
+    padding: 1rem 0;
+    height: 45%;
   }
   .home .right {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 2rem 6rem;
-    height: 50%;
+    padding: 2rem 7rem;
+    height: 55%;
   }
   .home .right h1 {
     margin-bottom: 10px;
     font-weight: 900;
+    width: 300px;
     font-family: "Poppins";
     line-height: 50px;
   }
@@ -152,7 +158,7 @@
     padding: 10px 30px;
     font-size: 25px;
     margin-top: 10px;
-    width: 310px;
+    width: 300px;
     text-wrap: nowrap;
     animation: fade 3s;
   }
@@ -162,8 +168,8 @@
     background: #fff;
     border-radius: 50%;
     z-index: 1;
-    margin-top: 20px;
-    margin-left: -70px;
+    margin-top: 10px;
+    margin-left: -55px;
     animation: scratch 2s;
   }
   .countdown {
