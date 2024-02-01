@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+
 .home {
   display: flex;
   justify-content: stretch;
@@ -27,6 +28,9 @@
 .home .left h1 {
   font-size: 60px;
   font-family: "Poppins";
+  background: -webkit-linear-gradient(#ffffff, #484747);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .home .left p {
   font-family: "Poppins";
@@ -50,7 +54,7 @@
 }
 .home .right button {
   padding: 10px 20px;
-  background: #085974;
+  background: #05485f;
   border: none;
   color: #fff;
   text-transform: uppercase;
@@ -104,18 +108,21 @@
   }
   .home .left {
     width: 100%;
+    padding: 3rem 0;
+    height: 50%;
   }
   .home .right {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 4rem 6rem;
+    padding: 2rem 6rem;
+    height: 50%;
   }
   .home .right h1 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 900;
     font-family: "Poppins";
-    line-height: 37px;
+    line-height: 40px;
   }
   .home .right p {
     font-size: 20px;
@@ -124,11 +131,38 @@
   }
   .home .right button {
     padding: 10px 20px;
-    background: #085974;
+    background: #05485f;
     border: none;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: bold;
+  }
+  .home .left h1 {
+    font-size: 50px;
+    font-family: "Poppins";
+  }
+  .home .left p {
+    font-family: "Poppins";
+    font-weight: 400;
+    border: 3px solid #fff;
+    margin-left: -25px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 310px;
+    text-wrap: nowrap;
+    animation: fade 3s;
+  }
+  .home .left span {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: -70px;
+    animation: scratch 2s;
   }
 }
