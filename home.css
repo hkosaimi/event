@@ -2,6 +2,7 @@
 .home {
   display: flex;
   justify-content: stretch;
+  height: 100vh;
 }
 .home .left {
   background: #000;
@@ -41,10 +42,20 @@
   animation: fade 3s;
 }
 .home .right {
-  background-image: url("/Home.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Home.png");
+  filter: saturate(150%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+.home .right button {
+  padding: 10px 20px;
+  background: #085974;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-weight: bold;
 }
 @keyframes fade {
   from {
@@ -53,6 +64,15 @@
   to {
     opacity: 1;
   }
+}
+.home .right h1 {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-family: "Poppins";
+  line-height: 48px;
+  width: 390px;
+  text-align: center;
+  font-size: 40px;
 }
 .home .left span {
   width: 50px;
@@ -63,6 +83,11 @@
   margin-top: 10px;
   margin-left: -70px;
   animation: scratch 2s;
+}
+.home .right p {
+  font-size: 20px;
+  font-family: "Poppins";
+  filter: drop-shadow(0 0 20px #0000003c);
 }
 @keyframes scratch {
   from {
@@ -96,5 +121,14 @@
     font-size: 20px;
     font-family: "Poppins";
     filter: drop-shadow(0 0 20px #0000003c);
+  }
+  .home .right button {
+    padding: 10px 20px;
+    background: #085974;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: bold;
   }
 }
